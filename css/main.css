@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@400;500&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@400;500&family=Oswald:wght@300;500&display=swap");
 *,
 *::before,
 *::after {
@@ -13,12 +12,14 @@
   --clr-dark: #000000;
   --clr-primary: #4897d0;
   --bg-color: #ede8ea;
-  --fw-medium: 500;
+  --fw-light: 300;
   --fw-regular: 400;
+  --fw-medium: 500;
 }
 
 html {
   background-color: var(--bg-color);
+  font-size: 10px;
 }
 
 body {
@@ -32,7 +33,7 @@ body {
 
 body h1 {
   font-family: "Frank Ruhl Libre", serif;
-  font-size: 58px;
+  font-size: 5.8rem;
   font-weight: var(--fw-regular);
 }
 
@@ -92,9 +93,65 @@ main .main-title {
 }
 
 .content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  display: grid;
+  position: relative;
   background-color: var(--bg-color);
-  padding: 50px;
+  padding: 10rem 8rem;
+}
+
+.content section {
+  margin: 4rem;
+}
+
+hr {
+  width: 100%;
+  border: 1px solid #dddddd;
+  background-color: #dddddd;
+  margin: 0;
+}
+
+.content section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 4rem;
+}
+
+.content img {
+  width: 670px;
+  height: 379px;
+}
+
+section h2 {
+  font-family: "Oswald", sans-serif;
+  font-weight: var(--fw-medium);
+  font-size: 1rem;
+  color: var(--clr-primary);
+}
+
+section h3 {
+  font-size: 2.8rem;
+}
+
+section p {
+  font-family: "Oswald", sans-serif;
+  font-weight: var(--fw-light);
+  font-size: 1.4rem;
+}
+
+button {
+  font-size: 1.2rem;
+  font-family: "Frank Ruhl Libre", serif;
+  color: var(--clr-light);
+  background-color: var(--clr-dark);
+  padding: 1rem;
+  width: 20.8rem;
+  height: 3.7rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+button span::before {
+  color: var(--clr-primary);
+  content: "\2192";
 }
