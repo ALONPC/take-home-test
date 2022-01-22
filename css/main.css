@@ -9,16 +9,25 @@
 :root {
   --min-width: 1440px;
   --dm: 16px; /* default margin */
+  --clr-light: #ffffff;
+  --clr-dark: #000000;
+  --clr-primary: #4897d0;
+  --bg-color: #ede8ea;
+  --fw-medium: 500;
+  --fw-regular: 400;
 }
 
 html {
-  background-color: grey;
-  font-family: "Frank Ruhl Libre", serif;
+  background-color: var(--bg-color);
 }
 
 body {
-  min-width: var(--min-width);
   margin: 0;
+  font-family: "Frank Ruhl Libre", serif;
+  font-size: 1.125rem;
+  color: var(--clr-dark);
+  line-height: 1.55;
+  /* min-width: var(--min-width); */
   display: flex;
   justify-content: center;
 }
@@ -26,7 +35,7 @@ body {
 body h1 {
   font-family: "Frank Ruhl Libre", serif;
   font-size: 58px;
-  font-weight: 400;
+  font-weight: var(--fw-regular);
 }
 
 header {
@@ -34,10 +43,10 @@ header {
   justify-content: space-between;
   align-items: center;
   position: absolute;
-  /* width: 100%; */
-  width: var(--min-width);
+  width: 100%;
+  /* width: var(--min-width); */
   background-color: white;
-  opacity: 70%;
+  opacity: 0.7;
   height: 76px;
   z-index: 1;
 }
@@ -49,29 +58,37 @@ header .logo {
 }
 
 header .menu-button {
+  position: relative;
   margin: 40px;
 }
 
 header div .menu-icon {
-  position: relative;
 }
 
-/* i believe */
-img {
-  opacity: none;
-}
-
-main .main-image {
+main {
   position: relative;
   width: 100%;
   height: 900px;
-  filter: brightness(70%);
+}
+
+/* must be pseudo element to apply the brightness filter */
+main::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(../images/main.png);
+  background-size: cover;
+  filter: brightness(80%);
 }
 
 main .main-title {
   position: absolute;
-  top: 60%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: white;
+  color: var(--clr-light);
+  text-align: center;
 }
