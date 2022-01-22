@@ -28,8 +28,6 @@ body {
   color: var(--clr-dark);
   line-height: 1.55;
   /* min-width: var(--min-width); */
-  display: flex;
-  justify-content: center;
 }
 
 body h1 {
@@ -91,4 +89,12 @@ main .main-title {
   transform: translate(-50%, -50%);
   color: var(--clr-light);
   text-align: center;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: var(--bg-color);
+  padding: 50px;
 }
