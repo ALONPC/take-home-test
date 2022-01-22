@@ -1,13 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@400;500&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 :root {
   --min-width: 1440px;
   --dm: 16px; /* default margin */
 }
 
-* {
-}
-
 html {
-  background-color: white;
+  background-color: grey;
+  font-family: "Frank Ruhl Libre", serif;
 }
 
 body {
@@ -15,6 +21,12 @@ body {
   margin: 0;
   display: flex;
   justify-content: center;
+}
+
+body h1 {
+  font-family: "Frank Ruhl Libre", serif;
+  font-size: 58px;
+  font-weight: 400;
 }
 
 header {
@@ -28,7 +40,6 @@ header {
   opacity: 70%;
   height: 76px;
   z-index: 1;
-  box-sizing: border-box;
 }
 
 header .logo {
@@ -50,12 +61,17 @@ img {
   opacity: none;
 }
 
-div .hero {
+main .main-image {
   position: relative;
   width: 100%;
   height: 900px;
+  filter: brightness(70%);
 }
 
-.hero h1 {
+main .main-title {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   color: white;
 }
