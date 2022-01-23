@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@400;500&family=Oswald:wght@300;500&display=swap");
+
 *,
 *::before,
 *::after {
@@ -29,7 +30,6 @@ body {
   font-size: 1.125rem;
   color: var(--clr-dark);
   line-height: 1.55;
-  /* min-width: var(--min-width); */
 }
 
 h1,
@@ -44,9 +44,17 @@ h1 {
   font-size: 5.8rem;
   color: var(--clr-light);
 }
+
 h2 {
   font-size: 2.8rem;
   color: var(--clr-dark);
+}
+
+h3 {
+  font-family: "Oswald", sans-serif;
+  font-weight: var(--fw-medium);
+  color: var(--clr-primary);
+  font-size: 1rem;
 }
 
 header {
@@ -55,25 +63,10 @@ header {
   align-items: center;
   position: absolute;
   width: 100%;
-  /* width: var(--min-width); */
   background-color: white;
   opacity: 0.7;
   height: 76px;
   z-index: 1;
-}
-
-header .logo {
-  position: relative;
-  /* width: 200px;
-  height: 43px; */
-}
-
-header .menu-button {
-  position: relative;
-  margin: 40px;
-}
-
-header div .menu-icon {
 }
 
 main {
@@ -110,14 +103,9 @@ main .main-title {
 }
 
 .content {
-  display: grid;
   position: relative;
   background-color: var(--bg-color);
   padding: 10rem 8rem;
-}
-
-.content section {
-  margin: 4rem;
 }
 
 hr {
@@ -131,10 +119,11 @@ hr {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin: 4rem;
   gap: 4rem;
 }
 
-.content img {
+.content-1 img {
   width: 670px;
   height: 379px;
 }
@@ -143,19 +132,6 @@ hr {
   display: flex;
   flex-direction: column;
   gap: 2rem;
-}
-
-.content h2 {
-  font-family: "Oswald", sans-serif;
-  font-weight: var(--fw-medium);
-  font-size: 1rem;
-  color: var(--clr-primary);
-}
-
-section h3 {
-  font-size: 2.8rem;
-  font-weight: var(--fw-regular);
-  margin: 0;
 }
 
 section p {
@@ -233,22 +209,40 @@ button span::before {
 }
 
 .content-3 {
-  position: relative;
+  display: flex;
+  background-color: var(--bg-color);
+  gap: 2rem;
+}
+
+.left-quote-container,
+.right-quote-container,
+.quote-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  height: 60rem;
+}
+
+/* .left-quote-container {
+  width: 60%;
+}
+
+.right-quote-container {
+  width: 40%;
+} */
+
+.right-quote-container img {
+  width: 37.6rem;
+  height: auto;
+}
+
+.quote-container {
+  display: flex;
 }
 
 /* quotes */
-.quote h1 {
-  margin: 0;
-  position: absolute;
+.quote {
   font-size: 50.4rem;
   color: var(--clr-dark);
+  line-height: 90%;
 }
-
-.quote h1 {
-  top: 0;
-}
-
-/* .quote h1:nth-child(2) {
-  top: 50px;
-  right: 400px;
-} */
