@@ -1,0 +1,56 @@
+.drawer {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 1px;
+  background-color: #fff;
+  overflow-x: hidden;
+  transition: 0.5s;
+  border: 1px solid #ddd;
+}
+
+.links,
+.social {
+  padding: 0.5rem 2rem 0 0;
+}
+
+.social {
+  margin-top: 8rem;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 2rem;
+  gap: 2.5rem;
+}
+
+.drawer a {
+  padding: 0.8rem;
+  text-decoration: none;
+  font-size: 2.8rem;
+  color: #000;
+  display: block;
+  transition: 0.3s;
+  text-align: end;
+}
+
+.drawer a:hover {
+  color: #ddd;
+}
+
+.drawer .drawer-close {
+  top: 0;
+  font-size: 3.6rem;
+}
+
+/* @media screen and (max-height: 450px) {
+  .drawer {
+    padding-top: 1.5rem;
+  }
+  .drawer a {
+    font-size: 1.8rem;
+  }
+} */

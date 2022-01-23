@@ -8,16 +8,41 @@
   </head>
   <link rel="stylesheet" href="css/main.css" />
   <link rel="stylesheet" href="css/mobile.css" />
+  <link rel="stylesheet" href="css/drawer.css" />
 
   <script src="index.js"></script>
   <body>
     <header>
       <div></div>
       <img class="logo" src="images/logo.png" />
-      <div class="menu-button">
-        <img class="menu-icon" src="images/menu-icon.svg" />
+      <div class="menu-button" onclick="openDrawer()">
+        <img src="images/menu-icon.png" />
       </div>
     </header>
+    <div id="sideDrawer" class="drawer">
+      <div class="links">
+        <a
+          href="javascript:void(0)"
+          class="drawer-close"
+          onclick="closeDrawer()"
+          >&times;</a
+        >
+        <a href="#">About Us</a>
+        <a href="#">The Difference</a>
+        <a href="#">Services</a>
+        <a href="#">Media Gallery</a>
+        <a href="#">Contact</a>
+      </div>
+      <div class="social">
+        <a href="#">Social</a>
+        <hr />
+        <div class="social-icons">
+          <img src="images/social-instagram.png" alt="instagram" />
+          <img src="images/social-twitter.png" alt="twitter" />
+          <img src="images/social-facebook.png" alt="facebook" />
+        </div>
+      </div>
+    </div>
     <main>
       <img src="images/gradient-fade.png" />
       <h1 class="main-title">Impeccable Attention to Detail</h1>
