@@ -133,9 +133,15 @@ hr {
   gap: 4rem;
 }
 
-.content-1 img {
-  width: 670px;
-  height: 379px;
+@media (max-width: 1200px) {
+  .content section {
+    display: block;
+  }
+}
+
+.content.content-1 section img {
+  height: auto;
+  max-width: 100%;
 }
 
 .section--text {
