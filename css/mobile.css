@@ -33,6 +33,9 @@
   .content-3 .quote {
     display: none;
   }
+  .quote-container {
+    margin-top: 4rem;
+  }
   .left-quote-container,
   .right-quote-container {
     display: block;
