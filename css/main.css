@@ -150,6 +150,7 @@ section p {
   font-family: "Oswald", sans-serif;
   font-weight: var(--fw-light);
   font-size: 1.4rem;
+  line-height: 1.8;
 }
 
 button {
@@ -259,6 +260,7 @@ button span::before {
 }
 
 .quote-container {
+  margin-top: 2.5rem;
   display: flex;
 }
 
@@ -266,7 +268,7 @@ button span::before {
 .quote {
   font-size: 50.4rem;
   color: var(--clr-dark);
-  line-height: 90%;
+  line-height: 80%;
 }
 
 .content-4 {
